@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>product list</title>
+    <link rel="stylesheet" href="{% static 'product/product_list.css' %}">
+</head>
+<body>
+    <h1>Product List</h1>
+
+    <div style="line-height: 30px">
+        <ul>
+        {% for product in all_products %}
+            <li>
+                -----------------<a href="{{ product.get_absolute_url }}">{{ product.title }}</a>-----------------
+            <hr>
+            <hr>
+
+            </li>
+        {% endfor %}
+
+        </ul>
+    </div>
+
+</body>
+</html>

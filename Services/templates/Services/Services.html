@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block page_title %}
+    our services
+{% endblock %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'Services/Services.css' %}">
+{% endblock %}
+
+
+{% block page_content %}
+    <section id="Services">
+        <h2>
+            These are our services:
+        </h2>
+        <ul>
+            {% for Service in Services %}
+               {% include 'Services/Services_details.html' %}
+
+            {% endfor %}
+
+        </ul>
+    </section>
+{% endblock %}

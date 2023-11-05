@@ -1,0 +1,14 @@
+body{
+    margin-top: auto;
+    padding-left: 10px
+}
+h1 {
+  font-family: 'Lucida Grande', Arial, sans-serif;
+  font-weight: bold;
+}
+div {
+  margin: 5px;
+  padding: 10px;
+  font-family: 'Lucida Grande', Arial, sans-serif;
+}
+

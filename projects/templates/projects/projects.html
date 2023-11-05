@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block page_title %}
+    our services
+{% endblock %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'projects/image/../../static/projects/projects.css' %}">
+{% endblock %}
+
+
+{% block page_content %}
+    <section>
+        <h2>
+            These are our projects:
+            <br>
+            <br>
+        </h2>
+        <ul>
+            {% for Project in Projects %}
+               {% include 'projects/projects_details.html' %}
+
+            {% endfor %}
+
+        </ul>
+    </section>
+{% endblock %}

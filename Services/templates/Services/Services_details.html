@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'Services/Services.css' %}">
+    <link rel="stylesheet" href="{% static 'Services/Services_details.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    {{ Service.title }}
+{% endblock %}
+
+{% block page_content %}
+    <section id="summary">
+        <h2>{{ Service.title }}</h2>
+        <article>
+            <img src="{% static 'Services/image/'|add:Service.image %}" alt="{{ Service.title }}">
+        </article>
+    </section>
+    <main>
+    {{ Service.content|linebreaks }}
+    </main>
+{% endblock %}

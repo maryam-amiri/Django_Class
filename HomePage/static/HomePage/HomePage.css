@@ -1,0 +1,16 @@
+body {
+    background-image: url(image/home.png);
+    background-size: cover;
+}
+.nav-item{
+    font-size: large;
+}
+
+.overlay{
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+

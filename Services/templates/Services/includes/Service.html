@@ -1,0 +1,16 @@
+{% load static %}
+
+<li>
+    <article class="post">
+        <a href="{% url 'Services:services' %}">
+            <img src="{% static 'Services/image/'|add:Service.image %}" alt="">
+        <div class="post-content">
+            <h3>
+                {{ Service.title }}
+            </h3>
+            <p>{{ Service.short_description }}</p>
+        <p>{{ Service.content }}</p>
+        </div>
+        </a>
+    </article>
+</li>

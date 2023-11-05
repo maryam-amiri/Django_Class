@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+}
+
+.course-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.course-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.course-item h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.course-item p {
+  font-size: 14px;
+}
+
+.course-item button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: none;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {
+  background-color: #CCC;
+}

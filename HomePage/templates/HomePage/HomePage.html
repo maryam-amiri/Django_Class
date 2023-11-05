@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'HomePage/HomePage.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+        <a class="nav-item nav-link" href="{% url 'Projects:projects' %}">Projects</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'courses:courses' %}">Courses</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'Services:services' %}">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'product:product_list' %}">products</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="{% url 'ContactUs:contact' %}">Contact us</a>
+  </li>
+</ul>
+
+</head>
+<body>
+        <div class="overlay"><br>
+            <br>
+            With our team of experts, you'll see,<br>
+            Your dream home can be a reality.
+        </div>
+        <div class="d-grid gap-2 col-3 form-row5 mx-auto">
+         <a class="btn btn-primary" role="button" aria-disabled="true" href="register.html" aria-label="register">register</a>
+            <a class="btn btn-secondary" role="button" aria-disabled="true" href="login.html">login</a>
+        </div>
+</body>
+</html>

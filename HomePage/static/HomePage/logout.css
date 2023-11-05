@@ -1,0 +1,17 @@
+a.btn {
+  color: white;
+  background-color: blue;
+  padding: 2px;
+  border-radius: 1px;
+}
+
+a.btn:hover {
+  background-color: darkblue;
+}
+
+a.button{
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+}

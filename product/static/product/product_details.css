@@ -1,0 +1,15 @@
+body {
+  margin: 10px;
+  padding: 80px;
+}
+h1 {
+  font-size: 8em;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  font-weight: bold;
+}
+p {
+    font-size: 2em;
+    font-family: Arial, sans-serif;
+    color: darkblue;
+}

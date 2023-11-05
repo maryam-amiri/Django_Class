@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block header_reference %}
+    <link rel="stylesheet" href="{% static 'projects/image/../../static/projects/projects.css' %}">
+    <link rel="stylesheet" href="{% static 'projects/projects_details.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    {{ Project.title }}
+{% endblock %}
+
+{% block page_content %}
+    <section id="summary">
+        <h2>{{ Project.title }}</h2>
+        <article>
+            <img src="{% static 'projects/image/'|add:Project.image %}" alt="{{ Project.title }}">
+        </article>
+    </section>
+    <main>
+    {{ Project.content|linebreaks }}
+    </main>
+{% endblock %}
